@@ -10,7 +10,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:8080"],  # Anyone can access
+    allow_origins=["*"],  # Anyone can access
     allow_methods=["*"],
     allow_headers=["*"],
 )
